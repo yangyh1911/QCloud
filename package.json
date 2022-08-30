@@ -1,6 +1,6 @@
 {
-  "name": "qcloud-cli",
-  "version": "0.1.0",
+  "name": "qc-tool",
+  "version": "1.0.0",
   "description": "qcloud cli tool",
   "main": "index.js",
   "scripts": {
