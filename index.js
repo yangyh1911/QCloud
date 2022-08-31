@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { Command } = require("commander");
 
 const program = new Command();
@@ -10,7 +11,7 @@ program
 
 program
   .command("upload")
-  .description("腾讯桶资源上传命令行工具")
+  .description("腾讯桶资源上传命令")
   .option("--SecretId <string>", "SecretId")
   .option("--SecretKey <string>", "SecretKey")
   .option("--Bucket <string>", "Bucket")
