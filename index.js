@@ -2,7 +2,7 @@
 const { Command } = require("commander");
 
 const program = new Command();
-const uploadQCloud = require("qcloud-upload");
+const uploadQCloud = require("./src/upload");
 
 program
   .name("q-cloud cli tool")
@@ -22,7 +22,7 @@ program
   // .option("--AppId", "AppId")
   // .option("--Headers", "Headers")
   .action((str, options) => {
-    console.log("options Bucket", options._optionValues);
+    // console.log("options Bucket", options._optionValues);
     uploadQCloud(options._optionValues);
   });
 

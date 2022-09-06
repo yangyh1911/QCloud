@@ -26,6 +26,10 @@
   "homepage": "https://github.com/yangyh1911/QCloud#readme",
   "dependencies": {
     "commander": "^9.4.0",
-    "qcloud-upload": "^1.5.0"
+    "chalk": "^2.3.0",
+    "cos-nodejs-sdk-v5": "^2.2.5",
+    "ndir": "^0.1.5",
+    "object-assign": "^4.1.1",
+    "q": "^1.5.1"
   }
 }
