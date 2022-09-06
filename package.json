@@ -1,6 +1,6 @@
 {
   "name": "qc-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "qcloud cli tool",
   "main": "index.js",
   "scripts": {
@@ -31,5 +31,8 @@
     "ndir": "^0.1.5",
     "object-assign": "^4.1.1",
     "q": "^1.5.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
