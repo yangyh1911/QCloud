@@ -138,7 +138,7 @@ module.exports = function (config = {}) {
       .join("/");
     const handler = function () {
       const defer = Q.defer();
-      upload();
+      curUpload();
 
       function check(callback) {
         cos.headObject(
@@ -164,7 +164,7 @@ module.exports = function (config = {}) {
           Region: config.Region,
           Key: fileKey,
           ContentLength: fs.statSync(filePath).size,
-          Body: fs.createReadStream(filePath),
+          Body: fs.readFileSync(filePath),
           onProgress(progressData) {
             // console.log(progressData)
           },
@@ -184,7 +184,7 @@ module.exports = function (config = {}) {
         });
       }
 
-      function upload() {
+      function curUpload() {
         if (!config.overWrite) {
           check(function (status) {
             if (status) {
